@@ -1,1 +1,14 @@
+Nodes of a one-way cross-reference list are represented in the form:
 
+class Node:
+def __init__(self):
+self.val = None # stored real number
+self.next = None # reference to the next element
+
+Let p be a pointer to a non-empty cross-reference list containing pairwise different real numbers a1, a2, . . . , an (the list has no guardian). We say that the list is k-chaotic if for each element it occurs that after sorting the list it would be in a position that differs from the current one
+by at most k. Thus, a 0-chaotic list is sorted, an example of a 1-chaotic list is
+1, 0, 3, 2, 4, 6, 5, and an (n - 1)-chaotic list of length n can contain numbers in any order.
+Please implement the function SortH(p,k), which sorts a k-chaotic list pointed to by p.
+The function should return a pointer to the sorted list. The algorithm should be as fast as possible
+and use as little memory as possible (in the asymptotic sense, measured against the length n of the list
+and parameter k)
