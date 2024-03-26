@@ -1,4 +1,3 @@
-from zad1testy import Node, runtests
 #Radosław Benedykciński
 #Operation of the algorithm - for each element, the algorithm searches through the next k elements (less if we run out of the list earlier)
 #the smallest of them is "clipped" to the beginning and then moves the pointer of the last element to the newly inserted element(to sort in ascending rather than descending order)
@@ -25,7 +24,3 @@ def SortH(p,k):
         x.next = None   #detaching x from l
         H = H.next  #moving H to the newly clipped element(the current last element of the sorted list)
     return begin.next   #returning a pointer to the first element of the sorted list(it had a guardian so it returns guardian.next)
-
-
-#change all_tests to True to run all tests
-runtests(SortH, all_tests = True )
