@@ -1,0 +1,14 @@
+Given an n-element array of natural numbers T and positive natural numbers k and p, where
+k ≤ p ≤ n. Let z[i] be the k-th largest of the elements: T[i], T[i+1], ..., T[i+p-1].
+In other words, z[i] is the k-th largest element in T in the index interval from i to i + p - 1 inclusive.
+To clarify: Consider the array [17,25,25,30]. In this array, the 1st largest element
+is 30, the 2nd largest element is 25, the 3rd largest element is also 25 (second occurrence), and the
+4th largest element is 17.
+Please implement the function ksum(T, k, p), which for an array T (of size n) and
+positive natural numbers k and p (k ≤ p ≤ n) it calculates and returns the value of the sum:
+z[0] + z[1] + z[2] + . . . + z[n-p]
+Example. For input:
+T = [7,9,1,5,8,6,2,12]
+k = 4
+p = 5
+calling ksum(T, k, p) should return the value 17 (corresponding to the sum of 5 + 5 + 2 + 5).
